@@ -24,7 +24,7 @@ const RiskMetricsHeatmap: React.FC = () => {
   const mobileHeaders = ['RM1', 'RM2', 'RM3', 'RM4', 'RM5', 'RM6'];
 
   // Sample data - 20 funds with 6 metrics each
-  const riskData: RiskData[] = Array.from({ length: 20 }, (_, i) => ({
+  const riskData: RiskData[] = Array.from({ length: 20 }, (_) => ({
     fundName: 'Atlas Portföy Yönetimi Fonu',
     metrics: Array.from({ length: 6 }, () => 
       Number((Math.random() * 4 + 4).toFixed(2)) // Random values between 4 and 8

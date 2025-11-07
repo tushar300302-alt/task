@@ -178,7 +178,7 @@ const SectorRiskChart: React.FC = () => {
               verticalAlign="bottom"
               height={36}
               iconType="circle"
-              formatter={(value, entry: any) => (
+              formatter={(value) => (
                 <span className="text-gray-300 text-sm">{value}</span>
               )}
             />
